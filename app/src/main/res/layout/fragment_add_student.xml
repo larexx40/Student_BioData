@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddStudentFragment">
+    
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_below="@+id/editTextTitle"
+        android:textAppearance="@style/Base.CardView"
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Note content"
+        android:inputType="textMultiLine"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:tint="@android:color/white"
+        android:id="@+id/fABDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_done" />
+    
+</RelativeLayout>
